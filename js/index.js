@@ -1,6 +1,6 @@
 console.log("I'm ready!");
 // Iteration 1: Names and Input
-let hacker1 = 'Johhnhnhn';
+let hacker1 = 'Johh';
 let hacker2 = 'John';
 
 console.log(`The drivers's name is ${hacker1}. `);
@@ -13,7 +13,7 @@ function longestName () {
     return `The driver has the longest name, it has ${hacker1.length} characters.`;
   } else if (hacker1.length < hacker2.length) {
     return `The navigator has the longest name, it has ${hacker2.length} characters.`;
-  } if (hacker1.length === hacker2.length) {
+  } else {
     return `WOW, you both have equally long names, ${hacker1.length} characters!`;
   }
 }
@@ -23,9 +23,8 @@ console.log(longestName(hacker1,hacker2))
 // Iteration 3: Loops
 function upperCase(str) {
     for (let letter of hacker1) {
-      return str.toUpperCase();
+      return str.toUpperCase().split('').join(' ');
   }
- 
 }
 console.log(upperCase(hacker1));
 
